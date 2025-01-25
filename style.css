@@ -143,3 +143,110 @@ body {
     font-weight: 100;
     font-family: "Source Serif 4";
 }
+
+#containers {
+    height: 300px;
+    width: 100%;
+    padding: 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* background-color: yellow; */
+
+}
+
+#containers::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    margin-left: 20px;
+    animation-name: cont;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll .oneS {
+    height: 100%;
+    width: 220px;
+    background-color: rgb(82, 35, 35);
+    margin-right: 27px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: inline-block;
+    /* background-color: blue; */
+    position: relative;
+}
+
+
+#scroll .scroll-elements {
+
+    height: 100%;
+    width: 220px;
+    background-color: rgb(247, 219, 219);
+    margin-right: 27px;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.7;
+
+}
+
+#scroll .oneS .textinone {
+    height: 30%;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 0px;
+    color: rgb(235, 233, 233);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#scroll .oneS .textinone h5 {
+    font-weight: 100;
+    font-family: "Source Serif 4";
+}
+
+#specialdiv {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    bottom: 10px;
+    /* background-color: burlywood; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.spediv {
+    width: 40%;
+    height: 80%;
+    /* background-color: aqua; */
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid rgb(233, 233, 233);
+    margin-bottom: 5px;
+}
+
+.spediv h6 {
+    font-size: x-small;
+    font-weight: 100;
+    font-family: "Source Serif 4";
+}
+
+@keyframes cont {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
