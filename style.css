@@ -18,7 +18,13 @@ body {
   /* background-color: red; */
 }
 
-
+#header #nav {
+  height: 80px;
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  padding: 0vw 2vw;
+}
 
 #naveone {
   height: 100%;
@@ -61,6 +67,29 @@ body {
   justify-content: flex-end;
 }
 
+#navethree button {
+  padding: 15px 30px;
+  font-weight: 600;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Source Serif 4";
+}
+
+#navethree button:nth-child(1) {
+  background-color: transparent;
+  color: black;
+}
+
+#headdiv {
+  height: calc(100% - 80px);
+  width: 100%;
+  /* background-color: lightblue; */
+  padding-top: 95px;
+}
 
 #headdiv h3 {
   background-color: #f2b0ea;
